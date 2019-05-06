@@ -1,0 +1,75 @@
+`docker run --rm -it alpine:latest`
+
+
+
+
+##--Images--
+
+
+`docker images`
+`docker image rm alpine`
+`docker image prune`
+
+
+##--Containers--
+`docker ps`
+`docker container prune`
+
+
+
+`docker run -it -rm alpine`
+
+
+
+`docker run -it alpine`
+The -a flag will list all containers that are running or have been stopped.
+`docker container ls -a`
+You can restart an old container by using the following command.
+`docker restart`
+
+
+For example, we can restart the old alpine container we made and see that out text file is still there.
+
+
+
+
+
+`docker attach`
+`docker stop`
+`docker kill`
+
+
+
+
+
+
+
+
+`--help`
+
+
+
+##--Dockerfile
+
+###FROM
+The from command specifies what base image to use we will use something like alpine or Ubuntu
+
+###MAINTAINER
+This is a way to specify the author of this image and who to contact for support
+
+###RUN
+The run command allows you to run commands on top of the existing image creating a new layer
+
+###EXPOSE
+This is ueed to expose hosts from the container to the host system
+
+###COPY
+This allows you to copy in a local file into the contianer
+
+###CMD
+This is a command that is set to executed when running this container
+
+###ENV
+This allows you to set environment variables inside of a container
+
+
