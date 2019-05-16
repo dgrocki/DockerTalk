@@ -1,38 +1,34 @@
 `docker run --rm -it alpine:latest`
 
-
-
-
 ## --Images--
 
 
 `docker images`
+
 `docker image rm alpine`
+
 `docker image prune`
 
 
 ## --Containers--
 `docker ps`
+The -a flag will list all containers that are running or have been stopped.
+`docker ps -a`
+
+Remove all hanging containers
 `docker container prune`
 
 
-
-`docker run -it -rm alpine`
-
+The rm flag will remove the container after it has exited
+`docker run -it --rm alpine`
 
 
 `docker run -it alpine`
-The -a flag will list all containers that are running or have been stopped.
-`docker container ls -a`
 You can restart an old container by using the following command.
 `docker restart`
 
 
 For example, we can restart the old alpine container we made and see that out text file is still there.
-
-
-
-
 
 `docker attach`
 `docker stop`
@@ -54,7 +50,7 @@ For example, we can restart the old alpine container we made and see that out te
 ### FROM
 The from command specifies what base image to use we will use something like alpine or Ubuntu
 
-###M AINTAINER
+### MAINTAINER
 This is a way to specify the author of this image and who to contact for support
 
 ### RUN
